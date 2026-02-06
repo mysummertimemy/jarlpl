@@ -1,0 +1,48 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		MultiPlayerSync()
+		Wait(1)
+		MoveViewPoint([461.370],FAST)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("Voltine")
+		Wait(3)
+		MoveToPoint([469.344])
+		Wait(2)
+		CreateVisualEffectObject("SPPOLYMP","Voltine")
+		CreateVisualEffectObject("POLYBACK","Voltine")
+		Polymorph(DOG_WILD)
+		PlaySound("WIDOG03")
+		Wait(6)
+		CreateVisualEffectObject("SPPOLYMP","Voltine")
+		CreateVisualEffectObject("POLYBACK","Voltine")
+		Polymorph(CAT)
+		PlaySound("CAT01")
+		Wait(4)
+		MoveToPoint([554.339])
+		Wait(3)
+		CreateVisualEffectObject("SPPOLYMP","Voltine")
+		CreateVisualEffectObject("POLYBACK","Voltine")
+		Polymorph(DEER)
+		Wait(5)
+		MoveToObject([PC])
+		Wait(1)
+		CreateVisualEffectObject("SPPOLYMP","Voltine")
+		CreateVisualEffectObject("POLYBACK","Voltine")
+		Polymorph(CLERIC_FEMALE_ELF)
+		ActionOverride(Player1,FaceObject("Voltine"))
+		ActionOverride(Player2,FaceObject("Voltine"))
+		ActionOverride(Player3,FaceObject("Voltine"))
+		ActionOverride(Player4,FaceObject("Voltine"))
+		ActionOverride(Player5,FaceObject("Voltine"))
+		ActionOverride(Player6,FaceObject("Voltine"))
+		Wait(4)
+		Dialogue([PC])
+END

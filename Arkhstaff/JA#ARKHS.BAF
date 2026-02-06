@@ -1,0 +1,22 @@
+IF
+	Allegiance(Myself,ENEMY)
+	Global("JA#EQUIP_MEL","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#EQUIP_MEL","LOCALS",1)
+		EquipMostDamagingMelee()
+END
+
+IF
+	Range([PC],15)
+	See([PC])
+	GlobalLT("JA#SAVETHALDO","GLOBAL",3)
+	GlobalGT("JA#KNOW_KRAMM","LOCALS",0)
+	OR(2)
+		Dead("Thaldo")
+		Global("JA#SAVETHALDO","GLOBAL",2)
+	GlobalGT("SearchIronThrone","GLOBAL",0)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet([PC])
+END

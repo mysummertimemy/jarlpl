@@ -1,0 +1,34 @@
+REPLACE_ACTION_TEXT THALDO
+~EscapeArea\(Destroy\)?([0-9]*)~
+~SetGlobal("JA#SAVETHALDO","GLOBAL",1) \0~
+
+REPLACE_ACTION_TEXT THALDO
+~[%WNL%%MNL%%LNL%%TAB% ]Enemy()~
+~EraseJournalEntry(@1010)\0~
+
+
+ADD_STATE_TRIGGER THALDO 6 ~True()~
+
+EXTEND_TOP THALDO 6
+  COPY_TRANS THALDO 0
+END
+
+
+BEGIN ~JA#THALD~
+
+IF ~RandomNum(3,1)~ THEN JA#THALD_1
+  SAY @0
+  IF ~~ THEN EXIT
+END
+
+IF ~RandomNum(3,2)~ THEN JA#THALD_2
+  SAY @1
+  IF ~~ THEN EXIT
+END
+
+IF ~RandomNum(3,3)~ THEN JA#THALD_3
+  SAY @2
+  IF ~~ THEN EXIT
+END
+
+// END JA#THALD
