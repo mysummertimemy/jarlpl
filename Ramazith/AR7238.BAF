@@ -1,0 +1,9 @@
+IF
+	GlobalGT("RamazithMove","GLOBAL",1)
+	Global("JA#RAMAZITH_AR7238","%NBaldursGate_RamazithsTower_L6%",0)
+	!Dead("Ramazith")
+THEN
+	RESPONSE #100
+		SetGlobal("JA#RAMAZITH_AR7238","%NBaldursGate_RamazithsTower_L6%",1)
+		ActionOverride("RAMAZITH",StartDialogueNoSet([PC]))
+END

@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("JA#NIMFU")
+		CreateCreature("JA#DWOLF",[4433.3142],5) // Schreckenswolf
+		CreateCreature("JA#DWOLF",[4389.3184],5) // Schreckenswolf
+		CreateCreature("JA#DWOLF",[4433.3206],5) // Schreckenswolf
+		CreateCreature("JA#DWOLF",[4423.3274],5) // Schreckenswolf
+		CreateCreature("JA#DWOLF",[4461.3055],5) // Schreckenswolf
+		CreateCreature("JA#DWOLF",[4445.3089],5) // Schreckenswolf
+		SmallWait(3)
+		ActionOverride("JA#DWOLF",Attack("JA#HOUND"))
+		ActionOverride("JA#DWOLF",Attack("JA#HOUND"))
+		ActionOverride("JA#DWOLF",Attack("JA#HOUND"))
+		ActionOverride("JA#DWOLF",Attack("JA#HOUND"))
+		ActionOverride("JA#DWOLF",MoveToObject("JA#HOUND"))
+		ActionOverride("JA#DWOLF",Attack("JA#NIMFU"))
+		Wait(1)
+		DisplayStringHead(Myself,@42)
+END
