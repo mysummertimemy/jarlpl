@@ -1,0 +1,67 @@
+IF
+	Allegiance(Myself,ENEMY)
+	HasWeaponEquiped(LastAttackerOf(Myself))
+	GlobalLT("JA#MARL_GUARD","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_GUARD","GLOBAL",2)
+END
+
+IF
+	Global("JA#MARL_GUARD","GLOBAL",0)
+	AttackedBy(Player1,0)
+	OR(5)
+		AttackedBy(Player2,0)
+		AttackedBy(Player3,0)
+		AttackedBy(Player4,0)
+		AttackedBy(Player5,0)
+		AttackedBy(Player6,0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_GUARD","GLOBAL",1)
+END
+
+IF
+	Global("JA#MARL_GUARD","GLOBAL",0)
+	AttackedBy(Player2,0)
+	OR(4)
+		AttackedBy(Player3,0)
+		AttackedBy(Player4,0)
+		AttackedBy(Player5,0)
+		AttackedBy(Player6,0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_GUARD","GLOBAL",1)
+END
+
+IF
+	Global("JA#MARL_GUARD","GLOBAL",0)
+	AttackedBy(Player3,0)
+	OR(3)
+		AttackedBy(Player4,0)
+		AttackedBy(Player5,0)
+		AttackedBy(Player6,0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_GUARD","GLOBAL",1)
+END
+
+IF
+	Global("JA#MARL_GUARD","GLOBAL",0)
+	AttackedBy(Player4,0)
+	OR(2)
+		AttackedBy(Player5,0)
+		AttackedBy(Player6,0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_GUARD","GLOBAL",1)
+END
+
+IF
+	Global("JA#MARL_GUARD","GLOBAL",0)
+	AttackedBy(Player5,0)
+	AttackedBy(Player6,0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_GUARD","GLOBAL",1)
+END

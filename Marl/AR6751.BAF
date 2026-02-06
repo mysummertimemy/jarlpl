@@ -1,0 +1,39 @@
+IF
+	Global("JA#MARL_GUARD_SPWN","%Beregost_FeldepostsInn_L1%",0)
+	Global("JA#MARL_WINS","%Beregost_FeldepostsInn_L1%",0)
+	Allegiance("Marl",ENEMY)
+	OR(6)
+		StateCheck(Player1,STATE_HELPLESS)
+		StateCheck(Player2,STATE_HELPLESS)
+		StateCheck(Player3,STATE_HELPLESS)
+		StateCheck(Player4,STATE_HELPLESS)
+		StateCheck(Player5,STATE_HELPLESS)
+		StateCheck(Player6,STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_WINS","%Beregost_FeldepostsInn_L1%",1)
+END
+
+IF
+	Global("JA#MARL_GUARD_SPWN","%Beregost_FeldepostsInn_L1%",0)
+	Global("JA#MARL_LOSES","%Beregost_FeldepostsInn_L1%",0)
+	Allegiance("Marl",ENEMY)
+	HPLT("Marl",8)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_LOSES","%Beregost_FeldepostsInn_L1%",1)
+		AddExperienceParty(650)
+END
+
+IF
+	OR(2)
+		Global("JA#MARL_GUARD","GLOBAL",1)
+		Global("JA#MARL_GUARD","GLOBAL",2)
+	Global("JA#MARL_GUARD_SPWN","%Beregost_FeldepostsInn_L1%",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#MARL_GUARD_SPWN","%Beregost_FeldepostsInn_L1%",1)
+		CreateCreature("JA#GUAB1",[834.640],2)
+		CreateCreature("JA#GUAB2",[843.594],2)
+		CreateCreature("JA#GUAB3",[891.628],2)
+END
