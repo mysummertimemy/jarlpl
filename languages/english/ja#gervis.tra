@@ -1,0 +1,37 @@
+@3  = ~What would a druid want of the two girls?~
+@4  = ~I already met Voltine and she told me about you. You roam at night before other peoples' windows and watch them. You're a peeping Tom!~
+@5  = ~Forget it! The children do not interest me.~
+@6  = ~Um, you know, Gervisse, my main interest is the safety of the children and I think it is necessary to protect them from your clutches.~
+@7  = ~I trust the words of Voltine. You are the real danger for the girls!~
+@8  = ~I can't tell you. With those savages one has to fear the worst. Perhaps a ritual sacrifice to some dark idol?~
+@9  = ~Okay, you have my support.~
+@10 = ~Voltine seems more trustworthy than you. I'm on her side.~
+@11 = ~I first need to make my own opinion before I side with either of you.~
+@12 = ~And you believe this nonsense? This horrible woman intends to harm the children, trust me.~
+@13 = ~Then you take the risk that they fall into the hands of that savage person, and possibly die... You're a disgrace to the civilized world.~
+@14 = ~The truth is quite obvious, my friend. So hurry up, time is scarce.~
+@15 = ~Then keep your eyes open. Voltine will enter this house tonight.~
+@16 = ~To penetrate my magical barriers, she will probably shapeshift. Into what I do not know, but be prepared for anything.~
+@17 = ~Ah, you've returned. Have you thought about it?~
+@18 = ~No, I have spoken with Voltine and trust her. To protect the girl I must kill you, monster!~
+@19 = ~Voltine is dead, but I do not trust you any more than her. For the safety of the girls, I'm going to kill you!~
+@20 = ~Yes, I will help to protect the girls from the Druid.~
+@21 = ~No, not yet.~
+@22 = ~Hello, there you are again. Fear not for the girls, you've saved them from Voltine. Now I'll stay here a little longer and continue to keep watch, just to make sure.~
+@23 = ~You're a decent guy, Gervisse. Farewell.~
+@24 = ~Why? Voltine is dead. Aren't the girls safe now?~
+@25 = ~I do not trust you, Gervisse. Your continued presence here with the girls makes me suspicious. It was you all the time, and I have killed Voltine mistakenly. Now you will receive my punishment!~
+@26 = ~You are right, but I blame myself that I couldn't thwart Voltines' plans earlier and that the twins were put in unnecessary danger. Therefore I will stay here a little longer, just to be sure.~
+@27 = ~All right, if it pleases you. Farewell, Gervisse.~
+@28 = ~Goodbye! We will surely meet again.~
+
+// @82	= ~Laerta and Louise
+
+// I decided it was Voltine, that looked shifty and passed herself as the protector of the children. For some reason, I think it hasn't solved the problem...~
+@83 = ~All right. I'll start immediately to look for her.~
+// @84 = ~I enjoy helping. Farewell.~
+@85 = ~We'll keep an eye open.~
+
+/* new for v0.7 */
+@91 = ~You killed that druid, as I can see.~
+@92 = ~Yes, she is dead.~
