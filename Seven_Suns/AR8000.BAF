@@ -1,0 +1,11 @@
+IF
+	GlobalLT("Chapter","GLOBAL",%tutu_chapter_7%)
+	Global("ScarMission","GLOBAL",1)
+	Global("Doppleganger","GLOBAL",0)
+	Global("JA#SSMR4_SPWN","%SWBaldursGate%",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JA#SSMR4_SPWN","%SWBaldursGate%",1)
+		CreateCreature("JA#SSMR4",[3536.1317],14) // Kaufmann
+		Continue()
+END
